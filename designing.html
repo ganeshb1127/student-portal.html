@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Portal</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #3498db;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #2ecc71;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    section {
+      padding: 20px;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background-color: #ecf0f1;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 15px;
+      width: 200px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      background-color: #34495e;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Student Portal</h1>
+  </header>
+
+  <nav>
+    <p>Navigation Links</p>
+  </nav>
+
+  <section>
+    <div class="card">
+      <h2>Profile</h2>
+      <p>View and edit your profile</p>
+    </div>
+
+    <div class="card">
+      <h2>Grades</h2>
+      <p>Check your latest grades</p>
+    </div>
+
+    <div class="card">
+      <h2>Schedule</h2>
+      <p>View your class schedule</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Student Portal</p>
+  </footer>
+
+</body>
+<body>
+
+<div align="Left">
+
+<h1>Student Registration Portal</h1>
+
+<form id="xyz">
+
+dabel for="name">Enter name: </label>
+
+<input type="text" id="name" /><br /><hr />
+
+<label for="dob">Select date of birth: </label>
+
+<input type="date" id="dob" /><br /><hr />
+
+<label for="branch">Enter branch: </label>
+
+<input type="text" id="branch" /><br /><hr />
+
+<label for="semester">Select Semester: </label>
+
+<input type="number" id="semester" max="8" min="0" /><br /><hr />
+
+<label for="doj">Select date of joining: </label>
+
+<input type="date" id="doj" /><br /><hr />
+
+<label for="university>Enter University Name: </label>
+
+<input type="text" ide university" /><br /><hr/>
+
+<label for="mobile">Enter mobile number: </label>
+
+<input type="text" id="mobile" /><br /><hr />
+
+<label for="email_add">Enter email: </label>
+
+<input type="email" id="email_add" /><br /><hr />
+
+</form>
+
+<button onclick="validate()>Submit</button>
+
+<p>
+
+Result: <span id="result"></span>
+
+</p>
+
+</div>
+
+</body>
+
+<script>
+
+function validate()
+
+var result_text = document.getElementById("result");
+
+var dob = document.getElementById("dob").value;
+
+var birth year = parseInt(dob substring(0, 4)); var doj=document.getElementById("do").value;
+
+var join_year = parseInt(doj.substring(0,4));
+
+if (join_year-birth year<17)
+
+result_text.innerHTML="Too young to have started college!"
+
+return;
+
+var branch=document.getElementById("branch").value;
+
+if (branch.search(/(CSE|ECE|ME|CE|EEE|BCA|MCA)/)==-1)
+
+result_text.innerHTML = "Invalid branch">
+
+return;
+
+var mobile_no = document.getElementById("mobile").value; if (mobile_no.search(/^[0-9]+$/)=-1 || mobile_no.length != 10)
+
+result_text.innerHTML = "Invalid mobile number":
+
+return;
+
+var email=document.getElementById("email_add").value
+
+if (email.search(/^([">D\\\\\s@"H+{\P^{\_\@"+"C+" 911,38 (0-9)(1,3).[0-9]{1,3}\ {0-9]{1,3}}}|{{[a-zA-Z0-9]+\.)+[a-zA-Z]{2}}}5/)==-1)
+
+result_text.innerHTML = "Invalid email ID"; return;
+
+1
+
+alert('Successfully transmitted datal");
+
+result_text.innerHTML="Success!":
+
+}
+
+</html>
